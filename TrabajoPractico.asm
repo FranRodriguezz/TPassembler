@@ -15,7 +15,7 @@ extern itoa
 
 section .data
 
-msjInicial          db  "Ingrese el operando inicial: ",0
+msjInicial          db "Ingrese el operando inicial: ",0
 msjIngresarArchivo  db "Ingrese el nombre del archivo: ",0
 msjErrorArchivo     db "Error al abrir el archivo, intente nuevamente",0
 modo                db "r",0
@@ -170,7 +170,7 @@ pedirDato:
     call transformarOperandoInicial
 
     mov rcx,[opInicialTransformado]
-    mov [resParcial],rcx ;coloco el operando inicial en el resultado parcial
+    mov [resParcial],rcx 
 ret
 
 transformarOperandoInicial: 
