@@ -1,6 +1,6 @@
 # TPassembler
 Trabajo practico asm
-Compilacion:
+# Compilacion:
 nasm .\TrabajoPractico.asm -f elf64
 
 gcc .\TrabajoPractico.o -o TrabajoPractico
