@@ -1,7 +1,6 @@
 global main
 ;Errores:
 ;Al imprimir el operando inicial aparecen caracteres raros al final
-;Imprime una vez extra el operando y operacion del registro.
 extern printf
 extern gets
 extern fopen 
@@ -48,14 +47,16 @@ section .text
 ;*******************************************************************************************************************
 main:
 
+    call pedirNombreArchivo
     call pedirDato
     call imprimirInicial
 
 abrirArchivo:
-    call pedirNombreArchivo
+    
     call leerArchivo
 
 trabajarRegistros:
+
     call leerOperando
 
 finPrograma:
