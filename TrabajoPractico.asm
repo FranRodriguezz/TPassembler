@@ -1,6 +1,5 @@
 global main
-;Errores:
-;Al imprimir el operando inicial aparecen caracteres raros al final
+
 extern printf
 extern gets
 extern fopen 
@@ -187,7 +186,7 @@ ret
 
 imprimirInicial: 
     mov rcx,msjOpInicial
-    mov rdx,opInicial ;imprimo como string, solo visualmente, luego opero con el transformado
+    mov rdx,opInicial ;imprimo como string, solo visualmente, luego opero con el transformado, al igual con los operandos del registro
     sub rsp,28h
     call printf
     add rsp,28h
